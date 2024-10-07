@@ -6,6 +6,9 @@ header {
   border-bottom: 1px solid #f9f7fe;
   padding: 0 0 30px 0;
 }
+main {
+  padding: 30px 0;
+}
 a {
   color: rgb(255, 192, 203);
 }
@@ -42,4 +45,37 @@ footer {
   color: white;
   margin-left: 5px;
   font-size: 16px;
+}
+.city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+.weather-details {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(39, 33, 66, 0.4);
+}
+.weather-details strong {
+  color: #f65282;
+}
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-temp-container {
+  display: flex;
+}
+.weather-temp-value {
+  font-size: 88px;
+  font-weight: bold;
+}
+.icon {
+  font-size: 44px;
+  margin-top: 22px;
+  margin-left: 10px;
+}
+.weather-temp-unit {
+  margin-top: 19px;
+  font-size: 28px;
 }
