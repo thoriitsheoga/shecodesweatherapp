@@ -2,6 +2,21 @@ body {
   background-color: #f9f7fe;
   font-family: "Roboto", sans-serif;
 }
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
+}
+a {
+  color: rgb(255, 192, 203);
+}
+footer {
+  border-top: 1px solid #f9f7fe;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
 .mainpage {
   background: white;
   max-width: 600px;
@@ -10,4 +25,21 @@ body {
   padding: 30px;
   box-shadow: 0 30px 50px rgb(65, 50, 100, 0.08);
   border-radius: 30px;
+}
+.search-form-input {
+  background-color: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.search-form-button {
+  background-color: pink;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  margin-left: 5px;
+  font-size: 16px;
 }
