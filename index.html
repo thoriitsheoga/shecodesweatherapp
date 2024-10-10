@@ -14,19 +14,20 @@
   <body>
     <div class="mainpage">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city"
             required
-            class="search-form-input" />
+            class="search-form-input"
+            id="search-bar" />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="city">Polokwane</h1>
+            <h1 class="city" id="city">Polokwane</h1>
             <p class="weather-details">
               Saturday 19:50, cloudy
               <br />
