@@ -34,6 +34,10 @@ function refreshWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
   timeElement.innerHTML = formatDate(date);
+  //updating icon
+  let iconElement = document.querySelector("#icon");
+  let icon = `<img src="${response.data.condition.icon_url}" class="icon"/>`;
+  iconElement.innerHTML = icon;
   //updating temperature
   let temperatureElement = document.querySelector("#temp-value");
   let temperature = Math.round(response.data.temperature.current);
