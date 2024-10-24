@@ -42,6 +42,8 @@ function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temp-value");
   let temperature = Math.round(response.data.temperature.current);
   temperatureElement.innerHTML = temperature;
+
+  getForecast(response.data.city);
 }
 
 function searchCity(city) {
@@ -55,7 +57,12 @@ function search(event) {
   let searchInput = document.querySelector("#search-bar");
   searchCity(searchInput.value);
 }
-function displayforecast() {
+function getForecast(city) {
+  let apiKey = "e4ce9c9t0c3f0014ab46bfba167d7oad";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayforecast);
+}
+function displayforecast(response) {
   days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   forecastHTML = "";
   days.forEach(function (day) {
@@ -81,4 +88,3 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
 searchCity("Polokwane");
-displayforecast();
