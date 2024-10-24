@@ -33,7 +33,7 @@ footer {
   background-color: #f9f7fe;
   border: none;
   border-radius: 6px;
-  width: 80%;
+  width: 85%;
   padding: 15px 20px;
   font-size: 16px;
 }
@@ -93,8 +93,10 @@ footer {
   line-height: 20px;
 }
 .weather-forecast-icon {
-  font-size: 38px;
-  text-align: center;
+  width: 88px;
+  height: 88px;
+  margin: 0 auto;
+  display: block;
   margin-bottom: 10px;
 }
 .weather-forecast-temp {
