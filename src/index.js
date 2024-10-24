@@ -55,7 +55,30 @@ function search(event) {
   let searchInput = document.querySelector("#search-bar");
   searchCity(searchInput.value);
 }
+function displayforecast() {
+  days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  forecastHTML = "";
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<section class="weather-forecast-day">
+  <div class="weather-forecast">
+    <div class="weather-forecast-date">${day}</div>
+    <div class="weather-forecast-icon">🌥️</div>
+    <div class="weather-forecast-temp">
+      <div class="weather-forecast-temp-early">9°</div>
+      <div class="weather-forecast-temp-late">
+        <strong>15°</strong>
+      </div>
+    </div>
+  </div>
+</section>`;
+  });
+  let forecastElement = document.querySelector("#weather-forecast-day");
+  forecastElement.innerHTML = forecastHTML;
+}
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
 searchCity("Polokwane");
+displayforecast();
